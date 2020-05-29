@@ -1,4 +1,4 @@
-const env = require('env')
+const env = require('./env')
 
 let resUrl
 let mp3FilePath
