@@ -4,7 +4,7 @@ const mysql = require('mysql')
 // 统一来引用，我们就可以从constant中来找数据了
 const constant = require('./const')
 const cors = require('cors')
-const voice = require('./voice1')
+const voice = require('./voice')
 // 然后我们执行express方法获取App,app就代表整个web应用
 // express 就是这里的 createApplication，通过执行这个方法得到了一个App
 const app = express()
@@ -382,5 +382,5 @@ const server = app.listen(3000, () => {
     const host = server.address().address
     const port = server.address().port
 
-    // console.log('server is listening at http://%s:%s', host, port)
+    console.log('server is listening at http://%s:%s', host, port)
 })

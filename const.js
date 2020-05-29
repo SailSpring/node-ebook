@@ -1,5 +1,14 @@
-const resUrl = "http://120.95.132.23:9000"
-const mp3FilePath = "D:/resource/mp3"
+const env = require('env')
+
+let resUrl
+let mp3FilePath
+if (env === 'dev') {
+    const resUrl = 'http://120.95.132.23:9000'
+    const mp3FilePath = 'D:/resource/mp3'
+} else if (env === 'prod') {
+    resUrl = 'http://49.233.107.207'
+    mp3FilePath = '/root/nginx/upload/mp3'
+}
 
 // 所有的分组
 const category = [
