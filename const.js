@@ -16,7 +16,7 @@ if (env === 'dev') {
     mp3FilePath = '/root/nginx/upload/mp3'
     dbHost = '49.233.107.207'
     dbUser = 'root'
-    dbPwd = ''
+    dbPwd = '123456'
 }
 
 // 所有的分组
